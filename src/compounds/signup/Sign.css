@@ -80,3 +80,19 @@
 }
 
 
+@media (min-width:320px)and (max-width:425px) {
+    .container{
+        overflow: hidden;
+    }
+    .block1{
+        width: 80%;
+        height: 80%;
+      }
+    #submitbtn{
+        left: 22%;
+        margin-top: 9%;
+    }
+    .log{
+        left: 19%;
+    }
+}

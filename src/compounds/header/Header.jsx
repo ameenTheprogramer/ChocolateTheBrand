@@ -51,13 +51,15 @@ function If320to425width (){
 
   const onClickOutsideTargetDiv =(e)=> {
     const targetDiv = document.getElementById('menudiv');
-  
-    if (!targetDiv.contains(e.target)) {
-    document.removeEventListener('click', onClickOutsideTargetDiv);
-    let menudiv = document.getElementById('menudiv')
-    menudiv.style.display = 'none'
+    if(targetDiv){
+
+      if (!targetDiv.contains(e.target)) {
+        document.removeEventListener('click', onClickOutsideTargetDiv);
+        let menudiv = document.getElementById('menudiv')
+        menudiv.style.display = 'none'
+      }
     }
-  }
+    }
 
 
 
@@ -169,11 +171,11 @@ function Header() {
       {window.innerWidth < '425px' ? null : <If320to425width/>}
 
 
-      <div id='opaciti0'  className={user? 'hlinks s2' : 'hlinks'}>
+      <div id='opaciti0'  className={user? 'hlinks s2 hlinks100' : 'hlinks hlinks100'}>
         <a className='notlink s1' onClick={user ? nav1 : nav2} style={{opacity:`${window.innerWidth < '425'? 0 : 1 }`}} >
           {user && window.innerWidth > '425' ? `Welcome  ${user.displayName ? user.displayName : ' ' }` :'Login'}</a>
 
-        <a className='producks hoverline' onClick={()=>{
+        <a id='producks' className='producks hoverline' onClick={()=>{
           document.documentElement.scrollTop = 673
           
         }} >Products</a>

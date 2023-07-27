@@ -1,4 +1,4 @@
-.container23{
+.container23 {
     overflow-y: hidden;
     background: #140f0a;
     width: 100%;
@@ -7,7 +7,8 @@
     align-items: center;
     justify-content: center;
 }
-.block123{
+
+.block123 {
     background: #120a02;
     width: 30%;
     border-radius: 17px;
@@ -17,7 +18,8 @@
     font-family: sans-serif;
 
 }
-.inpt23{
+
+.inpt23 {
     background: #2e2b27;
 
     position: relative;
@@ -31,19 +33,21 @@
     font-weight: 600;
     font-size: 15px;
     margin-top: -1%;
-    
+
 }
-.lbl23{
+
+.lbl23 {
     position: relative;
     left: 12%;
     top: 3%;
     font-weight: 600;
 }
-.inpt23:focus{
+
+.inpt23:focus {
     outline: 2px solid rgb(0, 149, 255);
 }
 
-#submitbtn23{
+#submitbtn23 {
     background: rgb(255 255 0);
     position: relative;
     border: none;
@@ -57,27 +61,30 @@
     margin-top: 150px;
 }
 
-#submitbtn23:hover{
+#submitbtn23:hover {
     background: rgba(255, 255, 0, 0.678);
 
 
 }
 
-.log23{
+.log23 {
     font-size: 13px;
     font-weight: 600;
     position: relative;
     top: 4px;
     left: 112px;
 }
-.notalink23{
+
+.notalink23 {
     color: rgb(0, 149, 255);
     text-decoration: none;
 }
-.notalink23:hover{
+
+.notalink23:hover {
     text-decoration: underline;
 }
-#imageFile{
+
+#imageFile {
     max-width: 70%;
     max-height: 190px;
     position: relative;
@@ -86,7 +93,34 @@
     border-radius: 10px;
     box-shadow: 0px 0px 10px 0px #422e2e;
 }
-#file{
+
+#file {
     position: relative;
     left: 110px;
+}
+
+
+@media (min-width:320px)and (max-width:425px) {
+    .container23 {
+        overflow: hidden;
+    }
+
+    .block123 {
+        width: 80%;
+        height: 80%;
+    }
+
+    #submitbtn23 {
+        left: 15%;
+        margin-top: 50%;
+    }
+
+    .log {
+        left: 19%;
+    }
+
+    #file {
+        position: relative;
+        left: 10%;
+    }
 }

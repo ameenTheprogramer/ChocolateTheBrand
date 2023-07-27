@@ -77,3 +77,19 @@
 .notalink2:hover{
     text-decoration: underline;
 }
+
+@media (min-width:320px)and (max-width:425px) {
+    .container2{
+        overflow: hidden;
+    }
+    .block12{
+        width: 80%;
+      }
+    #submitbtn2{
+        left: 22%;
+        margin-top: 35%;
+    }
+    .log2{
+        left: 20%;
+    }
+}
