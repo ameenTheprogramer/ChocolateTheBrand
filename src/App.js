@@ -27,7 +27,7 @@ function App() {
       <Router>
         <Routes>
 
-          <Route exact path='/ChocolateTheBrand' element={<Home/>} />
+          <Route exact path='/ChocolateTheBrand/' element={<Home/>} />
 
           <Route exact path='/signup' element={<Signup/>} />
 
