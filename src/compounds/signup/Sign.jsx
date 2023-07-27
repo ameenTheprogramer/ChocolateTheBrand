@@ -53,7 +53,7 @@ function Sign() {
       
       
     }).then(()=>{
-      navigate('/')
+      navigate('/ChocolateTheBrand/')
       
 
       // alert('signed up')

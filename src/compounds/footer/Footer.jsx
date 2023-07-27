@@ -13,7 +13,9 @@ function Footer() {
         {user ? null :<button className='btn' onClick={()=>{
           navigate('/signup')
         }} >Sign up !</button>}
-        <p className='copy'>&#169; 2023 by Chocolate The Brand.</p>
+        <p className='copy'>&#169; 2023 by Chocolate The Brand. 
+        
+         Created by ameen</p>
       
     </div>
   )

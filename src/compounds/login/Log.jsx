@@ -14,7 +14,7 @@ function Log() {
       e.preventDefault()
       signInWithEmailAndPassword(auth,email,password).then(()=>{
         // alert('Logged in')
-        navigate('/')
+        navigate('/ChocolateTheBrand/')
   
       }).catch((error)=>{
         alert(error.message)
