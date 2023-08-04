@@ -34,7 +34,7 @@ function Container() {
       // console.log(allPost);
       setProducts(allPost)
     }).catch((error) => {
-      alert('log in for the best experience.  ' + error.message)
+      // alert('log in for the best experience.  ' + error.message)
     })
   }, [])
 
