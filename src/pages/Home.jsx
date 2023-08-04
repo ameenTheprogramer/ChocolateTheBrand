@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../compounds/header/Header'
 import Container from '../compounds/container/Container'
 import Footer from '../compounds/footer/Footer'
-// import Chocolate from '../compounds/chocolate/chocolate'
+import Chocolate1 from '../compounds/chocolate/chocolate'
 
 
 
@@ -42,7 +42,7 @@ function Home() {
     <div>
         <Header/>
         <Container/>
-        {/* <Chocolate/> */}
+        <Chocolate1/>
         <Footer/>
         {/* <script>
           {

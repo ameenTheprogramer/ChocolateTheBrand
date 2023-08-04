@@ -1,7 +1,11 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, Suspense, useEffect } from 'react';
 import * as THREE from 'three';
 import chocolatebar from '../../3D/chocolatebar1.glb'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
+
+// import React from 'react';
+import { Canvas , useLoader  } from '@react-three/fiber';
+// import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 
 
 
@@ -34,7 +38,7 @@ const Chocolate = () => {
             scene.add(model);
 
             // Optional: You can set the initial position of the model here
-            model.position.set(0, 0, 1); // Example position: (x=0, y=1, z=-5)
+            model.position.set(1, 0, 1);
               model.rotation.set(0 , 48.5, 0)
 
         });
@@ -58,7 +62,7 @@ const Chocolate = () => {
             if (model) {
                 
                 
-                model.rotation.y += -0.09;
+                model.rotation.y += -0.08;
             }
 
             renderer.render(scene, camera);
@@ -76,6 +80,34 @@ const Chocolate = () => {
     return <canvas className='canwas' ref={canvasRef} />;
 };
 
+
+
+
+
+
+
+
+
+function Model({ url }) {
+    const gltf = useLoader(GLTFLoader, url);
+    return (
+      <primitive object={gltf.scene} scale={1} />
+    );
+  }
+
+function Chocolate1(){
+    const gltfPath = chocolatebar;
+
+    return (
+      <Canvas>
+        <ambientLight />
+        <pointLight position={[10, 10, 10]} />
+        <Suspense fallback={null}>
+          <Model url={gltfPath} />
+        </Suspense>
+      </Canvas>
+    );
+}
 
 
 
