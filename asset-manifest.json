@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/ChocolateTheBrand/static/css/main.77898955.css",
-    "main.js": "/ChocolateTheBrand/static/js/main.04cf75e3.js",
+    "main.js": "/ChocolateTheBrand/static/js/main.2cdffc4e.js",
     "static/media/chocolatebar1.glb": "/ChocolateTheBrand/static/media/chocolatebar1.44d8072099ef84547353.glb",
     "static/media/choco1.jpeg": "/ChocolateTheBrand/static/media/choco1.876ab788f8b40e6b7ea9.jpeg",
     "static/media/choco2.jpeg": "/ChocolateTheBrand/static/media/choco2.2a8501d5fa15768207f1.jpeg",
     "index.html": "/ChocolateTheBrand/index.html",
     "main.77898955.css.map": "/ChocolateTheBrand/static/css/main.77898955.css.map",
-    "main.04cf75e3.js.map": "/ChocolateTheBrand/static/js/main.04cf75e3.js.map"
+    "main.2cdffc4e.js.map": "/ChocolateTheBrand/static/js/main.2cdffc4e.js.map"
   },
   "entrypoints": [
     "static/css/main.77898955.css",
-    "static/js/main.04cf75e3.js"
+    "static/js/main.2cdffc4e.js"
   ]
 }
