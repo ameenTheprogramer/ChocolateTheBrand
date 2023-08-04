@@ -88,26 +88,26 @@ const Chocolate = () => {
 
 
 
-function Model({ url }) {
-    const gltf = useLoader(GLTFLoader, url);
-    return (
-      <primitive object={gltf.scene} scale={1} />
-    );
-  }
+// function Model({ url }) {
+//     const gltf = useLoader(GLTFLoader, url);
+//     return (
+//       <primitive object={gltf.scene} scale={1} />
+//     );
+//   }
 
-function Chocolate1(){
-    const gltfPath = chocolatebar;
+// function Chocolate1(){
+//     const gltfPath = chocolatebar;
 
-    return (
-      <Canvas>
-        <ambientLight />
-        <pointLight position={[10, 10, 10]} />
-        <Suspense fallback={null}>
-          <Model url={gltfPath} />
-        </Suspense>
-      </Canvas>
-    );
-}
+//     return (
+//       <Canvas>
+//         <ambientLight />
+//         <pointLight position={[10, 10, 10]} />
+//         <Suspense fallback={null}>
+//           <Model url={gltfPath} />
+//         </Suspense>
+//       </Canvas>
+//     );
+// }
 
 
 
